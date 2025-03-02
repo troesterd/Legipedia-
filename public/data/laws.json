@@ -20,19 +20,12 @@
                 {
                   "number": "1",
                   "title": "Ziel des Vertrags",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Dieser Vertrag regelt die Arbeitsweise der Union und legt die Bereiche, die Abgrenzung und die Einzelheiten der Ausübung ihrer Zuständigkeiten fest.",
-                      "sentences": [
-                        "Dieser Vertrag regelt die Arbeitsweise der Union und legt die Bereiche, die Abgrenzung und die Einzelheiten der Ausübung ihrer Zuständigkeiten fest."
-                      ]
-                    }
-                  ]
+                  "contentFile": "laws/aeuv/aeuv_1_current.json"
                 }
               ]
             }
-          ]
+          ],
+          "praeambelFile": "laws/aeuv/aeuv_praeambel.json"
         }
       ]
     },
@@ -56,57 +49,10 @@
                 {
                   "number": "1",
                   "title": "Menschenwürde",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.",
-                      "sentences": [
-                        "Die Würde des Menschen ist unantastbar.",
-                        "Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt.",
-                      "sentences": [
-                        "Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Die nachfolgenden Grundrechte binden Gesetzgebung, vollziehende Gewalt und Rechtsprechung als unmittelbar geltendes Recht.",
-                      "sentences": [
-                        "Die nachfolgenden Grundrechte binden Gesetzgebung, vollziehende Gewalt und Rechtsprechung als unmittelbar geltendes Recht."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.",
-                          "sentences": [
-                            "Die Würde des Menschen ist unantastbar.",
-                            "Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt.",
-                          "sentences": [
-                            "Das Deutsche Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Die nachfolgenden Grundrechte binden Gesetzgebung, vollziehende Gewalt und Rechtsprechung als unmittelbar geltendes Recht.",
-                          "sentences": [
-                            "Die nachfolgenden Grundrechte binden Gesetzgebung, vollziehende Gewalt und Rechtsprechung als unmittelbar geltendes Recht."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_1_23-05-1949.json"
                     }
                   ],
                   "citations": [
@@ -116,50 +62,16 @@
                       "date": "15.02.2006",
                       "summary": "Luftsicherheitsgesetz-Urteil zur Menschenwürde"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_1_current.json"
                 },
                 {
                   "number": "2",
                   "title": "Persönliche Freiheitsrechte",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit, soweit er nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt.",
-                      "sentences": [
-                        "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit, soweit er nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Jeder hat das Recht auf Leben und körperliche Unversehrtheit. Die Freiheit der Person ist unverletzlich. In diese Rechte darf nur auf Grund eines Gesetzes eingegriffen werden.",
-                      "sentences": [
-                        "Jeder hat das Recht auf Leben und körperliche Unversehrtheit.",
-                        "Die Freiheit der Person ist unverletzlich.",
-                        "In diese Rechte darf nur auf Grund eines Gesetzes eingegriffen werden."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit, soweit er nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt.",
-                          "sentences": [
-                            "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit, soweit er nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Jeder hat das Recht auf Leben und körperliche Unversehrtheit. Die Freiheit der Person ist unverletzlich. In diese Rechte darf nur auf Grund eines Gesetzes eingegriffen werden.",
-                          "sentences": [
-                            "Jeder hat das Recht auf Leben und körperliche Unversehrtheit.",
-                            "Die Freiheit der Person ist unverletzlich.",
-                            "In diese Rechte darf nur auf Grund eines Gesetzes eingegriffen werden."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_2_23-05-1949.json"
                     }
                   ],
                   "citations": [
@@ -169,62 +81,16 @@
                       "date": "26.02.2020",
                       "summary": "Recht auf selbstbestimmtes Sterben"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_2_current.json"
                 },
                 {
                   "number": "3",
                   "title": "Gleichheit vor dem Gesetz",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Alle Menschen sind vor dem Gesetz gleich.",
-                      "sentences": [
-                        "Alle Menschen sind vor dem Gesetz gleich."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Männer und Frauen sind gleichberechtigt. Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin.",
-                      "sentences": [
-                        "Männer und Frauen sind gleichberechtigt.",
-                        "Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden. Niemand darf wegen seiner Behinderung benachteiligt werden.",
-                      "sentences": [
-                        "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden.",
-                        "Niemand darf wegen seiner Behinderung benachteiligt werden."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Alle Menschen sind vor dem Gesetz gleich.",
-                          "sentences": [
-                            "Alle Menschen sind vor dem Gesetz gleich."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Männer und Frauen sind gleichberechtigt.",
-                          "sentences": [
-                            "Männer und Frauen sind gleichberechtigt."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden.",
-                          "sentences": [
-                            "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_3_23-05-1949.json"
                     }
                   ],
                   "citations": [
@@ -234,123 +100,27 @@
                       "date": "26.02.2020",
                       "summary": "Zum allgemeinen Gleichheitssatz"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_3_current.json"
                 },
                 {
                   "number": "4",
                   "title": "Glaubens-, Gewissens- und Bekenntnisfreiheit",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich.",
-                      "sentences": [
-                        "Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Die ungestörte Religionsausübung wird gewährleistet.",
-                      "sentences": [
-                        "Die ungestörte Religionsausübung wird gewährleistet."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Niemand darf gegen sein Gewissen zum Kriegsdienst mit der Waffe gezwungen werden. Das Nähere regelt ein Bundesgesetz.",
-                      "sentences": [
-                        "Niemand darf gegen sein Gewissen zum Kriegsdienst mit der Waffe gezwungen werden.",
-                        "Das Nähere regelt ein Bundesgesetz."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich.",
-                          "sentences": [
-                            "Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Die ungestörte Religionsausübung wird gewährleistet.",
-                          "sentences": [
-                            "Die ungestörte Religionsausübung wird gewährleistet."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Niemand darf gegen sein Gewissen zum Kriegsdienst mit der Waffe gezwungen werden. Das Nähere regelt ein Bundesgesetz.",
-                          "sentences": [
-                            "Niemand darf gegen sein Gewissen zum Kriegsdienst mit der Waffe gezwungen werden.",
-                            "Das Nähere regelt ein Bundesgesetz."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_4_23-05-1949.json"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_4_current.json"
                 },
                 {
                   "number": "5",
                   "title": "Meinungs-, Informations-, Presse-, Rundfunk- und Filmfreiheit",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten. Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet. Eine Zensur findet nicht statt.",
-                      "sentences": [
-                        "Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten.",
-                        "Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet.",
-                        "Eine Zensur findet nicht statt."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Diese Rechte finden ihre Schranken in den Vorschriften der allgemeinen Gesetze, den gesetzlichen Bestimmungen zum Schutze der Jugend und in dem Recht der persönlichen Ehre.",
-                      "sentences": [
-                        "Diese Rechte finden ihre Schranken in den Vorschriften der allgemeinen Gesetze, den gesetzlichen Bestimmungen zum Schutze der Jugend und in dem Recht der persönlichen Ehre."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Kunst und Wissenschaft, Forschung und Lehre sind frei. Die Freiheit der Lehre entbindet nicht von der Treue zur Verfassung.",
-                      "sentences": [
-                        "Kunst und Wissenschaft, Forschung und Lehre sind frei.",
-                        "Die Freiheit der Lehre entbindet nicht von der Treue zur Verfassung."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten. Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet. Eine Zensur findet nicht statt.",
-                          "sentences": [
-                            "Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten.",
-                            "Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet.",
-                            "Eine Zensur findet nicht statt."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Diese Rechte finden ihre Schranken in den Vorschriften der allgemeinen Gesetze, den gesetzlichen Bestimmungen zum Schutze der Jugend und in dem Recht der persönlichen Ehre.",
-                          "sentences": [
-                            "Diese Rechte finden ihre Schranken in den Vorschriften der allgemeinen Gesetze, den gesetzlichen Bestimmungen zum Schutze der Jugend und in dem Recht der persönlichen Ehre."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Kunst und Wissenschaft, Forschung und Lehre sind frei. Die Freiheit der Lehre entbindet nicht von der Treue zur Verfassung.",
-                          "sentences": [
-                            "Kunst und Wissenschaft, Forschung und Lehre sind frei.",
-                            "Die Freiheit der Lehre entbindet nicht von der Treue zur Verfassung."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_5_23-05-1949.json"
                     }
                   ],
                   "citations": [
@@ -360,7 +130,8 @@
                       "date": "04.11.2009",
                       "summary": "Wunsiedel-Entscheidung zur Meinungsfreiheit"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_5_current.json"
                 }
               ]
             },
@@ -370,98 +141,14 @@
                 {
                   "number": "20",
                   "title": "Verfassungsgrundsätze - Widerstandsrecht",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.",
-                      "sentences": [
-                        "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.",
-                      "sentences": [
-                        "Alle Staatsgewalt geht vom Volke aus.",
-                        "Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.",
-                      "sentences": [
-                        "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden."
-                      ]
-                    },
-                    {
-                      "number": "4",
-                      "text": "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist.",
-                      "sentences": [
-                        "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.",
-                          "sentences": [
-                            "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.",
-                          "sentences": [
-                            "Alle Staatsgewalt geht vom Volke aus.",
-                            "Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.",
-                          "sentences": [
-                            "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_20_23-05-1949.json"
                     },
                     {
                       "date": "24.06.1968",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.",
-                          "sentences": [
-                            "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.",
-                          "sentences": [
-                            "Alle Staatsgewalt geht vom Volke aus.",
-                            "Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.",
-                          "sentences": [
-                            "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden."
-                          ]
-                        },
-                        {
-                          "number": "4",
-                          "text": "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist.",
-                          "sentences": [
-                            "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_20_24-06-1968.json"
                     }
                   ],
                   "citations": [
@@ -471,90 +158,20 @@
                       "date": "30.06.2009",
                       "summary": "Lissabon-Urteil zu den Grundsätzen der demokratischen Verfassung"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_20_current.json"
                 },
                 {
                   "number": "21",
                   "title": "Parteien",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Die Parteien wirken bei der politischen Willensbildung des Volkes mit. Ihre Gründung ist frei. Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen. Sie müssen über die Herkunft und Verwendung ihrer Mittel sowie über ihr Vermögen öffentlich Rechenschaft geben.",
-                      "sentences": [
-                        "Die Parteien wirken bei der politischen Willensbildung des Volkes mit.",
-                        "Ihre Gründung ist frei.",
-                        "Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen.",
-                        "Sie müssen über die Herkunft und Verwendung ihrer Mittel sowie über ihr Vermögen öffentlich Rechenschaft geben."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig. Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht.",
-                      "sentences": [
-                        "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig.",
-                        "Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Das Nähere regeln Bundesgesetze.",
-                      "sentences": [
-                        "Das Nähere regeln Bundesgesetze."
-                      ]
-                    }
-                  ],
                   "history": [
                     {
                       "date": "23.05.1949",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Parteien wirken bei der politischen Willensbildung des Volkes mit. Ihre Gründung ist frei. Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen.",
-                          "sentences": [
-                            "Die Parteien wirken bei der politischen Willensbildung des Volkes mit.",
-                            "Ihre Gründung ist frei.",
-                            "Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig. Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht.",
-                          "sentences": [
-                            "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig.",
-                            "Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_21_23-05-1949.json"
                     },
                     {
                       "date": "21.12.1983",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Die Parteien wirken bei der politischen Willensbildung des Volkes mit. Ihre Gründung ist frei. Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen. Sie müssen über die Herkunft und Verwendung ihrer Mittel sowie über ihr Vermögen öffentlich Rechenschaft geben.",
-                          "sentences": [
-                            "Die Parteien wirken bei der politischen Willensbildung des Volkes mit.",
-                            "Ihre Gründung ist frei.",
-                            "Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen.",
-                            "Sie müssen über die Herkunft und Verwendung ihrer Mittel sowie über ihr Vermögen öffentlich Rechenschaft geben."
-                          ]
-                        },
-                        {
-                          "number": "2",
-                          "text": "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig. Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht.",
-                          "sentences": [
-                            "Parteien, die nach ihren Zielen oder nach dem Verhalten ihrer Anhänger darauf ausgehen, die freiheitliche demokratische Grundordnung zu beeinträchtigen oder zu beseitigen oder den Bestand der Bundesrepublik Deutschland zu gefährden, sind verfassungswidrig.",
-                            "Über die Frage der Verfassungswidrigkeit entscheidet das Bundesverfassungsgericht."
-                          ]
-                        },
-                        {
-                          "number": "3",
-                          "text": "Das Nähere regeln Bundesgesetze.",
-                          "sentences": [
-                            "Das Nähere regeln Bundesgesetze."
-                          ]
-                        }
-                      ]
+                      "contentFile": "laws/gg/gg_21_21-12-1983.json"
                     }
                   ],
                   "citations": [
@@ -564,11 +181,13 @@
                       "date": "17.01.2017",
                       "summary": "NPD-Urteil zur Verfassungswidrigkeit von Parteien"
                     }
-                  ]
+                  ],
+                  "contentFile": "laws/gg/gg_21_current.json"
                 }
               ]
             }
-          ]
+          ],
+          "praeambelFile": "laws/gg/gg_praeambel.json"
         },
         {
           "id": "bgb",
@@ -589,63 +208,14 @@
                         {
                           "number": "823",
                           "title": "Schadensersatzpflicht",
-                          "content": [
-                            {
-                              "number": "1",
-                              "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
-                              "sentences": [
-                                "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet."
-                              ]
-                            },
-                            {
-                              "number": "2",
-                              "text": "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt. Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein.",
-                              "sentences": [
-                                "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt.",
-                                "Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein."
-                              ]
-                            }
-                          ],
                           "history": [
                             {
                               "date": "01.01.1900",
-                              "content": [
-                                {
-                                  "number": "1",
-                                  "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
-                                  "sentences": [
-                                    "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet."
-                                  ]
-                                },
-                                {
-                                  "number": "2",
-                                  "text": "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt. Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein.",
-                                  "sentences": [
-                                    "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt.",
-                                    "Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein."
-                                  ]
-                                }
-                              ]
+                              "contentFile": "laws/bgb/bgb_823_01-01-1900.json"
                             },
                             {
                               "date": "01.01.2002",
-                              "content": [
-                                {
-                                  "number": "1",
-                                  "text": "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.",
-                                  "sentences": [
-                                    "Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet."
-                                  ]
-                                },
-                                {
-                                  "number": "2",
-                                  "text": "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt. Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein.",
-                                  "sentences": [
-                                    "Die gleiche Verpflichtung trifft denjenigen, welcher gegen ein den Schutz eines anderen bezweckendes Gesetz verstößt.",
-                                    "Ist nach dem Inhalt des Gesetzes ein Verstoß gegen dieses auch ohne Verschulden möglich, so tritt die Ersatzpflicht nur im Falle des Verschuldens ein."
-                                  ]
-                                }
-                              ]
+                              "contentFile": "laws/bgb/bgb_823_01-01-2002.json"
                             }
                           ],
                           "citations": [
@@ -661,7 +231,8 @@
                               "date": "27.02.2018",
                               "summary": "Schadensersatzansprüche bei Verletzung des allgemeinen Persönlichkeitsrechts"
                             }
-                          ]
+                          ],
+                          "contentFile": "laws/bgb/bgb_823_current.json"
                         }
                       ]
                     }
@@ -687,41 +258,14 @@
                     {
                       "number": "35",
                       "title": "Begriff des Verwaltungsaktes",
-                      "content": [
-                        {
-                          "number": "1",
-                          "text": "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist. Allgemeinverfügung ist ein Verwaltungsakt, der sich an einen nach allgemeinen Merkmalen bestimmten oder bestimmbaren Personenkreis richtet oder die öffentlich-rechtliche Eigenschaft einer Sache oder ihre Benutzung durch die Allgemeinheit betrifft.",
-                          "sentences": [
-                            "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist.",
-                            "Allgemeinverfügung ist ein Verwaltungsakt, der sich an einen nach allgemeinen Merkmalen bestimmten oder bestimmbaren Personenkreis richtet oder die öffentlich-rechtliche Eigenschaft einer Sache oder ihre Benutzung durch die Allgemeinheit betrifft."
-                          ]
-                        }
-                      ],
                       "history": [
                         {
                           "date": "25.05.1976",
-                          "content": [
-                            {
-                              "number": "1",
-                              "text": "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist.",
-                              "sentences": [
-                                "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist."
-                              ]
-                            }
-                          ]
+                          "contentFile": "laws/vwvfg/vwvfg_35_25-05-1976.json"
                         },
                         {
                           "date": "12.09.1996",
-                          "content": [
-                            {
-                              "number": "1",
-                              "text": "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist. Allgemeinverfügung ist ein Verwaltungsakt, der sich an einen nach allgemeinen Merkmalen bestimmten oder bestimmbaren Personenkreis richtet oder die öffentlich-rechtliche Eigenschaft einer Sache oder ihre Benutzung durch die Allgemeinheit betrifft.",
-                              "sentences": [
-                                "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist.",
-                                "Allgemeinverfügung ist ein Verwaltungsakt, der sich an einen nach allgemeinen Merkmalen bestimmten oder bestimmbaren Personenkreis richtet oder die öffentlich-rechtliche Eigenschaft einer Sache oder ihre Benutzung durch die Allgemeinheit betrifft."
-                              ]
-                            }
-                          ]
+                          "contentFile": "laws/vwvfg/vwvfg_35_12-09-1996.json"
                         }
                       ],
                       "citations": [
@@ -737,7 +281,8 @@
                           "date": "18.12.2019",
                           "summary": "Zur Allgemeinverfügung"
                         }
-                      ]
+                      ],
+                      "contentFile": "laws/vwvfg/vwvfg_35_current.json"
                     }
                   ]
                 }
@@ -767,33 +312,12 @@
                 {
                   "number": "1",
                   "title": "Bayern als Freistaat",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Bayern ist ein Freistaat.",
-                      "sentences": [
-                        "Bayern ist ein Freistaat."
-                      ]
-                    },
-                    {
-                      "number": "2",
-                      "text": "Die Staatsfarben sind weiß und blau.",
-                      "sentences": [
-                        "Die Staatsfarben sind weiß und blau."
-                      ]
-                    },
-                    {
-                      "number": "3",
-                      "text": "Das Staatswappen wird durch Gesetz bestimmt.",
-                      "sentences": [
-                        "Das Staatswappen wird durch Gesetz bestimmt."
-                      ]
-                    }
-                  ]
+                  "contentFile": "laws/bay_verfassung/bay_verfassung_1_current.json"
                 }
               ]
             }
-          ]
+          ],
+          "praeambelFile": "laws/bay_verfassung/bay_verfassung_praeambel.json"
         }
       ]
     },
@@ -816,15 +340,7 @@
                 {
                   "number": "1",
                   "title": "Zusammensetzung des Stadtrates",
-                  "content": [
-                    {
-                      "number": "1",
-                      "text": "Der Stadtrat besteht aus der Oberbürgermeisterin oder dem Oberbürgermeister und 80 ehrenamtlichen Stadtratsmitgliedern.",
-                      "sentences": [
-                        "Der Stadtrat besteht aus der Oberbürgermeisterin oder dem Oberbürgermeister und 80 ehrenamtlichen Stadtratsmitgliedern."
-                      ]
-                    }
-                  ]
+                  "contentFile": "laws/muenchen_haupt/muenchen_haupt_1_current.json"
                 }
               ]
             }

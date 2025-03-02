@@ -124,3 +124,31 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Styling for annotations */
+.annotation {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(254, 243, 199, 0.5);
+  border-left: 4px solid #F59E0B;
+  border-radius: 0.375rem;
+}
+
+.annotation-title {
+  font-weight: 600;
+  color: #92400E;
+  margin-bottom: 0.5rem;
+}
+
+.annotation-text {
+  color: #78350F;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.annotation-source {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #B45309;
+  font-style: italic;
+}

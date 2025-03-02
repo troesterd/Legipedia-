@@ -244,6 +244,15 @@ const LegiPedia = () => {
       if (!currentLaw || !selectedParagraph) return;
       
       const paragraph = await findParagraph(currentLaw, selectedParagraph);
+      
+      // Load annotations if available
+      if (paragraph && paragraph.annotationsFile) {
+        const annotations = await fetchContentFromFile(paragraph.annotationsFile);
+        if (annotations) {
+          paragraph.annotations = annotations;
+        }
+      }
+      
       setParagraphContent(paragraph);
     };
     
@@ -409,27 +418,18 @@ const LegiPedia = () => {
         ))}
         
         {currentLaw.structure === "articles" && currentLaw.articles?.map((article, articleIndex) => (
-          <div key={articleIndex} className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{article.title}</h2>
-            
+          <div key={articleIndex} className="mb-2">
+            <div className="flex items-center text-sm font-medium hover:bg-gray-100 p-1 rounded">
+              <ChevronRight className="h-4 w-4 mr-1" />
+              {article.title}
+            </div>
             {article.items?.map((item) => (
-              <div key={item.number} className="mb-6 ml-4" id={`art-${item.number}`}>
-                <h3 className="font-medium mb-2">Art. {item.number} {item.title}</h3>
-                <div className="paragraph-content">
-                  {item.content.map((contentItem, index) => (
-                    <div key={index} className="mb-4">
-                      {contentItem.number && (
-                        <p className="mb-1">
-                          <span className="paragraph-number mr-2">({contentItem.number})</span>
-                          <span className="law-text">{contentItem.text}</span>
-                        </p>
-                      )}
-                      {!contentItem.number && (
-                        <p className="mb-1 law-text">{contentItem.text}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
+              <div
+                key={item.number}
+                className={`ml-6 text-sm p-1 rounded cursor-pointer ${selectedParagraph === item.number ? 'bg-blue-100 font-medium' : 'hover:bg-gray-100'}`}
+                onClick={() => setSelectedParagraph(item.number)}
+              >
+                Art. {item.number} {item.title}
               </div>
             ))}
           </div>
@@ -471,6 +471,9 @@ const LegiPedia = () => {
     const title = paragraph.number === "praeambel" ? "Präambel" : 
       `${prefix} ${paragraph.number} ${paragraph.title || ""}`;
 
+    // Check if paragraph has annotations
+    const annotations = paragraph.annotations || [];
+    
     return (
       <div className={`p-4 ${isHistorical ? 'bg-gray-50' : ''}`}>
         {/* Navigation Buttons */}
@@ -529,154 +532,26 @@ const LegiPedia = () => {
             );
           })}
         </div>
-      </div>
-    );
-  };
 
-  // Rendere den gesamten Text eines Gesetzes
-  const renderFullLawText = () => {
-    if (!currentLaw) return <div className="p-4">Gesetz nicht gefunden</div>;
-    
-    return (
-      <div className="p-4">
-        <h1 className="text-2xl font-bold mb-6">{currentLaw.title} ({currentLaw.abbreviation})</h1>
-        
-        {/* Präambel anzeigen wenn vorhanden */}
-        {currentLaw.praeambel && (
-          <div className="mb-8">
-            <h2 className="text-xl font-bold mb-2">Präambel</h2>
-            <div className="paragraph-content law-text mb-6">
-              {currentLaw.praeambel}
+        {/* Annotations section */}
+        {annotations.length > 0 && (
+          <div className="mt-6 pt-4 border-t border-gray-200">
+            <h3 className="text-lg font-medium mb-3">Anmerkungen</h3>
+            <div className="space-y-3">
+              {annotations.map((annotation, idx) => (
+                <div key={idx} className="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                  {annotation.title && (
+                    <h4 className="font-medium text-yellow-800 mb-1">{annotation.title}</h4>
+                  )}
+                  <p className="text-yellow-900">{annotation.text}</p>
+                  {annotation.source && (
+                    <p className="text-sm text-yellow-700 mt-1">Quelle: {annotation.source}</p>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         )}
-        
-        {/* Gesetzestext basierend auf der Struktur anzeigen */}
-        {currentLaw.structure === "books" && currentLaw.books?.map((book, bookIndex) => (
-          <div key={bookIndex} className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{book.title}</h2>
-            
-            {book.sections?.map((section, sectionIndex) => (
-              <div key={sectionIndex} className="mb-6 ml-4">
-                <h3 className="text-lg font-semibold mb-3">{section.title}</h3>
-                
-                {section.titles?.map((title, titleIndex) => (
-                  <div key={titleIndex} className="mb-4 ml-4">
-                    <h4 className="text-md font-medium mb-2">{title.title}</h4>
-                    
-                    {title.paragraphs?.map((para) => (
-                      <div key={para.number} className="mb-6 ml-4" id={`para-${para.number}`}>
-                        <h5 className="font-medium mb-2">§ {para.number} {para.title}</h5>
-                        <div className="paragraph-content">
-                          {para.content.map((item, index) => (
-                            <div key={index} className="mb-4">
-                              {item.number && (
-                                <p className="mb-1">
-                                  <span className="paragraph-number mr-2">({item.number})</span>
-                                  <span className="law-text">{item.text}</span>
-                                </p>
-                              )}
-                              {!item.number && (
-                                <p className="mb-1 law-text">{item.text}</p>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-        
-        {currentLaw.structure === "parts" && currentLaw.parts?.map((part, partIndex) => (
-          <div key={partIndex} className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{part.title}</h2>
-            
-            {part.chapters?.map((chapter, chapterIndex) => (
-              <div key={chapterIndex} className="mb-6 ml-4">
-                <h3 className="text-lg font-semibold mb-3">{chapter.title}</h3>
-                
-                {chapter.paragraphs?.map((para) => (
-                  <div key={para.number} className="mb-6 ml-4" id={`para-${para.number}`}>
-                    <h4 className="font-medium mb-2">§ {para.number} {para.title}</h4>
-                    <div className="paragraph-content">
-                      {para.content.map((item, index) => (
-                        <div key={index} className="mb-4">
-                          {item.number && (
-                            <p className="mb-1">
-                              <span className="paragraph-number mr-2">({item.number})</span>
-                              <span className="law-text">{item.text}</span>
-                            </p>
-                          )}
-                          {!item.number && (
-                            <p className="mb-1 law-text">{item.text}</p>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-        
-        {currentLaw.structure === "articles" && currentLaw.articles?.map((article, articleIndex) => (
-          <div key={articleIndex} className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{article.title}</h2>
-            
-            {article.items?.map((item) => (
-              <div key={item.number} className="mb-6 ml-4" id={`art-${item.number}`}>
-                <h3 className="font-medium mb-2">Art. {item.number} {item.title}</h3>
-                <div className="paragraph-content">
-                  {item.content.map((contentItem, index) => (
-                    <div key={index} className="mb-4">
-                      {contentItem.number && (
-                        <p className="mb-1">
-                          <span className="paragraph-number mr-2">({contentItem.number})</span>
-                          <span className="law-text">{contentItem.text}</span>
-                        </p>
-                      )}
-                      {!contentItem.number && (
-                        <p className="mb-1 law-text">{contentItem.text}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        ))}
-        
-        {currentLaw.structure === "paragraphs" && currentLaw.paragraphs?.map((section, sectionIndex) => (
-          <div key={sectionIndex} className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{section.title}</h2>
-            
-            {section.items?.map((item) => (
-              <div key={item.number} className="mb-6 ml-4" id={`para-${item.number}`}>
-                <h3 className="font-medium mb-2">§ {item.number} {item.title}</h3>
-                <div className="paragraph-content">
-                  {item.content.map((contentItem, index) => (
-                    <div key={index} className="mb-4">
-                      {contentItem.number && (
-                        <p className="mb-1">
-                          <span className="paragraph-number mr-2">({contentItem.number})</span>
-                          <span className="law-text">{contentItem.text}</span>
-                        </p>
-                      )}
-                      {!contentItem.number && (
-                        <p className="mb-1 law-text">{contentItem.text}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        ))}
       </div>
     );
   };

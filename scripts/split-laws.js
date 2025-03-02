@@ -35,7 +35,7 @@ function processLaw(law, categoryId) {
   
   // Process each structure type differently
   if (law.structure === "books") {
-    for (const book of law.books || []) {
+    for (const book of lawCopy.books || []) {
       for (const section of book.sections || []) {
         for (const title of section.titles || []) {
           for (const paragraph of title.paragraphs || []) {
@@ -54,7 +54,19 @@ function processLaw(law, categoryId) {
                   path.join(lawDir, histFileName),
                   JSON.stringify(version.content, null, 2)
                 );
+                // Remove content from history object
+                delete version.content;
               }
+            }
+            
+            // Process annotations if any
+            if (paragraph.annotations && paragraph.annotations.length > 0) {
+              const annotationsFileName = `${lawId}_${paragraph.number}_annotations.json`;
+              fs.writeFileSync(
+                path.join(lawDir, annotationsFileName),
+                JSON.stringify(paragraph.annotations, null, 2)
+              );
+              paragraph.annotationsFile = `laws/${lawId}/${annotationsFileName}`;
             }
             
             // Replace content with file references
@@ -75,7 +87,7 @@ function processLaw(law, categoryId) {
       }
     }
   } else if (law.structure === "parts") {
-    for (const part of law.parts || []) {
+    for (const part of lawCopy.parts || []) {
       for (const chapter of part.chapters || []) {
         for (const paragraph of chapter.paragraphs || []) {
           const currentFileName = `${lawId}_${paragraph.number}_current.json`;
@@ -91,7 +103,19 @@ function processLaw(law, categoryId) {
                 path.join(lawDir, histFileName),
                 JSON.stringify(version.content, null, 2)
               );
+              // Remove content from history object
+              delete version.content;
             }
+          }
+          
+          // Process annotations if any
+          if (paragraph.annotations && paragraph.annotations.length > 0) {
+            const annotationsFileName = `${lawId}_${paragraph.number}_annotations.json`;
+            fs.writeFileSync(
+              path.join(lawDir, annotationsFileName),
+              JSON.stringify(paragraph.annotations, null, 2)
+            );
+            paragraph.annotationsFile = `laws/${lawId}/${annotationsFileName}`;
           }
           
           paragraph.contentFile = `laws/${lawId}/${currentFileName}`;
@@ -110,60 +134,76 @@ function processLaw(law, categoryId) {
       }
     }
   } else if (law.structure === "articles" || law.structure === "paragraphs") {
-    const items = law.structure === "articles" 
-      ? law.articles.flatMap(article => article.items) 
-      : law.paragraphs.flatMap(section => section.items);
+    const articlesSections = law.structure === "articles" ? lawCopy.articles : lawCopy.paragraphs;
     
-    for (const item of items || []) {
-      const currentFileName = `${lawId}_${item.number}_current.json`;
-      fs.writeFileSync(
-        path.join(lawDir, currentFileName),
-        JSON.stringify(item.content, null, 2)
-      );
+    for (const articleSection of articlesSections || []) {
+      const items = articleSection.items || [];
       
-      if (item.history) {
-        for (const version of item.history) {
-          const histFileName = `${lawId}_${item.number}_${version.date.replace(/\./g, '-')}.json`;
-          fs.writeFileSync(
-            path.join(lawDir, histFileName),
-            JSON.stringify(version.content, null, 2)
-          );
+      for (const item of items) {
+        const currentFileName = `${lawId}_${item.number}_current.json`;
+        fs.writeFileSync(
+          path.join(lawDir, currentFileName),
+          JSON.stringify(item.content, null, 2)
+        );
+        
+        if (item.history) {
+          for (const version of item.history) {
+            const histFileName = `${lawId}_${item.number}_${version.date.replace(/\./g, '-')}.json`;
+            fs.writeFileSync(
+              path.join(lawDir, histFileName),
+              JSON.stringify(version.content, null, 2)
+            );
+            // Remove content from history object
+            delete version.content;
+          }
         }
-      }
-      
-      item.contentFile = `laws/${lawId}/${currentFileName}`;
-      delete item.content;
-      
-      if (item.history) {
-        item.history = item.history.map(version => {
-          const histFileName = `${lawId}_${item.number}_${version.date.replace(/\./g, '-')}.json`;
-          return {
-            date: version.date,
-            contentFile: `laws/${lawId}/${histFileName}`
-          };
-        });
+        
+        // Process annotations if any
+        if (item.annotations && item.annotations.length > 0) {
+          const annotationsFileName = `${lawId}_${item.number}_annotations.json`;
+          fs.writeFileSync(
+            path.join(lawDir, annotationsFileName),
+            JSON.stringify(item.annotations, null, 2)
+          );
+          item.annotationsFile = `laws/${lawId}/${annotationsFileName}`;
+        }
+        
+        item.contentFile = `laws/${lawId}/${currentFileName}`;
+        delete item.content;
+        
+        if (item.history) {
+          item.history = item.history.map(version => {
+            const histFileName = `${lawId}_${item.number}_${version.date.replace(/\./g, '-')}.json`;
+            return {
+              date: version.date,
+              contentFile: `laws/${lawId}/${histFileName}`
+            };
+          });
+        }
       }
     }
   }
   
   // If the law has a preamble, extract it too
-  if (law.praeambel) {
+  if (lawCopy.praeambel) {
     const praeambelFileName = `${lawId}_praeambel.json`;
     fs.writeFileSync(
       path.join(lawDir, praeambelFileName),
       JSON.stringify({
         content: [{
           number: "",
-          text: law.praeambel,
-          sentences: law.praeambel.split(/\.\s+/).filter(s => s.trim()).map(s => s + ".")
+          text: lawCopy.praeambel,
+          sentences: lawCopy.praeambel.split(/\.\s+/).filter(s => s.trim()).map(s => s + ".")
         }]
       }, null, 2)
     );
     
-    law.praeambelFile = `laws/${lawId}/${praeambelFileName}`;
+    lawCopy.praeambelFile = `laws/${lawId}/${praeambelFileName}`;
     // Keep the praeambel attribute for backwards compatibility
+    // but in a future version, consider removing it
   }
   
+  console.log(`Processed law: ${lawCopy.title} (${lawCopy.id})`);
   return lawCopy;
 }
 
@@ -184,3 +224,4 @@ fs.writeFileSync(
 );
 
 console.log('Completed splitting laws.json into separate files');
+console.log(`Main laws.json now contains only metadata, content is in ${LAWS_DIR}`);
