@@ -1,0 +1,23 @@
+[
+  {
+    "number": "1",
+    "text": "Bayern ist ein Freistaat.",
+    "sentences": [
+      "Bayern ist ein Freistaat."
+    ]
+  },
+  {
+    "number": "2",
+    "text": "Die Staatsfarben sind weiß und blau.",
+    "sentences": [
+      "Die Staatsfarben sind weiß und blau."
+    ]
+  },
+  {
+    "number": "3",
+    "text": "Das Staatswappen wird durch Gesetz bestimmt.",
+    "sentences": [
+      "Das Staatswappen wird durch Gesetz bestimmt."
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "number": "1",
+    "text": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.",
+    "sentences": [
+      "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat."
+    ]
+  },
+  {
+    "number": "2",
+    "text": "Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.",
+    "sentences": [
+      "Alle Staatsgewalt geht vom Volke aus.",
+      "Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt."
+    ]
+  },
+  {
+    "number": "3",
+    "text": "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.",
+    "sentences": [
+      "Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden."
+    ]
+  },
+  {
+    "number": "4",
+    "text": "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist.",
+    "sentences": [
+      "Gegen jeden, der es unternimmt, diese Ordnung zu beseitigen, haben alle Deutschen das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist."
+    ]
+  }
+]

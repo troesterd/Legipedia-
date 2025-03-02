@@ -1,0 +1,25 @@
+[
+  {
+    "number": "1",
+    "text": "Alle Menschen sind vor dem Gesetz gleich.",
+    "sentences": [
+      "Alle Menschen sind vor dem Gesetz gleich."
+    ]
+  },
+  {
+    "number": "2",
+    "text": "Männer und Frauen sind gleichberechtigt. Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin.",
+    "sentences": [
+      "Männer und Frauen sind gleichberechtigt.",
+      "Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin."
+    ]
+  },
+  {
+    "number": "3",
+    "text": "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden. Niemand darf wegen seiner Behinderung benachteiligt werden.",
+    "sentences": [
+      "Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden.",
+      "Niemand darf wegen seiner Behinderung benachteiligt werden."
+    ]
+  }
+]
